@@ -1,0 +1,9 @@
+canvas {
+    width: 25em;
+    height: 25em;
+    background-color: lightgray;
+    box-shadow:
+        4px 4px 0px darkgray,
+        8px 8px 0px rgb(124, 124, 124);
+    border-radius: 5px;
+}
