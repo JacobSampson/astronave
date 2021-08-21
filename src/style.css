@@ -1,0 +1,111 @@
+body {
+    background: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    width: 25em;
+    display: grid;
+    grid-template-rows: 5em 5em 1fr .25fr 5em 5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    position: absolute;
+    left: 50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    margin: 2rem;
+}
+
+.shadow {
+    box-shadow:
+        4px 4px 0px rgb(124, 124, 124),
+        8px 8px 0px rgb(199, 199, 199);
+    border-radius: 5px;
+    background-color: #8a807e;
+}
+
+.block {
+    transform: translateY(0);
+    transition: 0.125s ease-in-out;
+    display: grid;
+    justify-content: center;
+    align-content: center;  
+    font-weight: 800;
+    font-size: x-large;
+    user-select: none;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+h1, p {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+canvas {
+    width: 25em;
+    height: 25em;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;   
+    grid-column: 1 / -1; 
+}
+
+.pixels {
+    width: 25em;
+    height: calc(25em / 4);
+    display: grid;
+    grid-column: 1 / -1;
+    overflow: hidden;
+}
+
+.pixel {
+    background-color: black;
+    transition: 0.125s ease-in-out;
+}
+
+.pixel:hover {
+    background-color: white;
+    cursor:pointer;
+}
+
+.pixel.enabled {
+    background-color: white;
+}
+
+.pixel.enabled:hover {
+    background-color: darkgray;
+}
+
+section {
+    display: contents;
+}
+
+.block:hover {
+    cursor: pointer;
+    box-shadow:
+        2px 2px 0px rgb(124, 124, 124),
+        4px 4px 0px rgb(199, 199, 199);
+    transform: translateY(2px);
+}
+
+#btn-1 {
+    background-color: #8a807e;
+    color: aliceblue;
+}
+
+/* F48668 / F4A698 / 011936 */
+
+#btn-2 {
+    background-color: #DD614A;
+    color: aliceblue;
+}
+
+#btn-3 {
+    background-color: #A5C882;
+    color: black;
+}
