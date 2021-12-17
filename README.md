@@ -2,6 +2,7 @@
 
 WIP: [astrovanve](https://jacobsampson.github.io/astronave/)
 
+Small game testing WebGL features
 
 ## Links
 
