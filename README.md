@@ -1,8 +1,8 @@
 # astronave
 
-WIP: [astrovanve](https://jacobsampson.github.io/astronave/)
+[astrovanve](https://jacobsampson.github.io/astronave/)
 
-Small game testing WebGL features
+Small game testing WebGL features. WIP
 
 ## Links
 
